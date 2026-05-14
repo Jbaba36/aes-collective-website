@@ -1,0 +1,48 @@
+<!-- @partial:header -->
+<header class="navbar" role="banner">
+  <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:64px;">
+    <!-- Logo -->
+    <a href="index.html" style="display:flex;align-items:center;gap:0.75rem;text-decoration:none;color:var(--taupe);">
+      <img src="assets/img/logo-gold.svg" alt="AES Collective" style="height:36px;width:auto;" onerror="this.style.display='none'">
+      <span style="display:flex;flex-direction:column;line-height:1.1;">
+        <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.1rem;letter-spacing:0.04em;color:var(--gold);">AES</span>
+        <span style="font-family:'Inter',sans-serif;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--taupe);">COLLECTIVE</span>
+      </span>
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="desktop-nav" role="navigation" aria-label="Main navigation" style="display:flex;gap:2rem;align-items:center;">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="process.html">Process</a>
+      <a href="reach.html">Reach</a>
+      <a href="compliance.html">Compliance</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Mobile hamburger -->
+    <button class="mobile-menu-btn" aria-label="Open menu" style="font-size:1.5rem;line-height:1;">
+      &#9776;
+    </button>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" role="dialog" aria-label="Mobile navigation" style="display:none;">
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;border-bottom:1px solid rgba(207,203,191,0.15);">
+    <span style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.2rem;color:var(--gold);letter-spacing:0.06em;">AES COLLECTIVE</span>
+    <button class="mobile-drawer-close" aria-label="Close menu" style="background:none;border:none;color:var(--taupe);font-size:1.5rem;cursor:pointer;">&#10005;</button>
+  </div>
+  <nav class="mobile-drawer-links" role="navigation" aria-label="Mobile main navigation" style="padding-top:1rem;">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="process.html">Process</a>
+    <a href="reach.html">Reach</a>
+    <a href="compliance.html">Compliance</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div style="padding:1.5rem;border-top:1px solid rgba(207,203,191,0.1);margin-top:auto;">
+    <p style="font-size:0.75rem;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase;">Strictly Private & Confidential</p>
+  </div>
+</div>
+<!-- @endpartial -->

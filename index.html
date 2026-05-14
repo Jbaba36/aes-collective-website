@@ -1,464 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AES Collective Pte. Ltd. — International Commodity Trading, Singapore</title>
-  <meta name="description" content="AES Collective Pte. Ltd. is a Singapore-based international commodity trading company specializing in Energy (Diesel EN590, LNG, LPG, Crude Oil), Metals, and Agricultural products. SGS/BV/Intertek certified. Strictly Private & Confidential.">
-  <meta name="keywords" content="AES Collective, commodity trading Singapore, Diesel EN590, LNG, LPG, crude oil, international trade, energy trading">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5' fill='none' stroke='%230E2841' stroke-width='6'/%3E%3Cpolygon points='50,20 80,35 80,65 50,80 20,65 20,35' fill='%23156082' stroke='%23E97132' stroke-width='3' stroke-dasharray='8,4'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AES Collective — Execution-Driven Energy Trading | Singapore</title>
+  <meta name="description" content="AES Collective is a Singapore-registered energy trading firm specialising in Diesel EN590, LNG, LPG and crude oil across Asia-Pacific, Europe and Africa."/>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg"/>
+  <link rel="stylesheet" href="assets/css/site.css"/>
+  <meta property="og:title" content="AES Collective — Execution-Driven Energy Trading"/>
+  <meta property="og:description" content="Structured trade in petroleum products, LNG, LPG and crude oil. Singapore registered. Institutional-grade execution."/>
+  <meta property="og:type" content="website"/>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#hero" class="nav-logo">
-        <!-- Hexagon Logo SVG -->
-        <svg width="48" height="48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="none" stroke="#156082" stroke-width="5"/>
-          <polygon points="50,20 80,35 80,65 50,80 20,65 20,35" fill="none" stroke="#E97132" stroke-width="3" stroke-dasharray="8,4"/>
-          <polygon points="50,38 62,46 62,58 50,66 38,58 38,46" fill="#0E2841" opacity="0.7"/>
-        </svg>
-        <div class="nav-logo-text">
-          <span class="nav-logo-name">AES</span>
-          <span class="nav-logo-sub">COLLECTIVE</span>
-          <span class="nav-tagline">Strictly Private &amp; Confidential</span>
-        </div>
-      </a>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#commodities">Commodities</a>
-        <a href="#process">Trade Process</a>
-        <a href="#credentials">Credentials</a>
-        <a href="#contact" class="nav-cta">Contact Us</a>
-      </div>
-      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-      </button>
-    </div>
-  </nav>
+<!-- @partial:header -->
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand" aria-label="AES Collective — Home">
+      <img src="assets/img/logo.png" alt="" class="brand-mark"/>
+      <span class="brand-text">
+        <span class="b1">AES Collective</span>
+        <span class="b2">Singapore · Energy Division</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span></span></button>
+    <nav class="nav-links" id="primary-nav" aria-label="Primary">
+      <a href="products.html" data-nav="products">Products</a>
+      <a href="process.html" data-nav="process">Process</a>
+      <a href="reach.html" data-nav="reach">Global Reach</a>
+      <a href="compliance.html" data-nav="compliance">Compliance</a>
+      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="mailto:energy@aescollective.sg?subject=Inquiry%20%E2%80%94%20AES%20Collective" class="btn btn-primary nav-cta">Request a Quote</a>
+    </nav>
+  </div>
+</header>
+<!-- @endpartial -->
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <div class="hero-badge">Singapore · Est. 2021</div>
-          <h1>AES Collective<br><span>Pte. Ltd.</span></h1>
-          <p class="hero-subtitle">International commodity trading across Energy, Metals, and Agriculture — connecting markets in Asia-Pacific, Europe, and Africa with integrity and precision.</p>
-          <div class="hero-actions">
-            <a href="#commodities" class="btn btn-primary">View Commodities →</a>
-            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-          </div>
-          <div class="hero-meta">
-            <div class="hero-meta-item">
-              <div class="hero-meta-label">Entity</div>
-              <div class="hero-meta-value">Exempt Private Company</div>
-            </div>
-            <div class="hero-meta-item">
-              <div class="hero-meta-label">UEN</div>
-              <div class="hero-meta-value font-mono">202135481Z</div>
-            </div>
-            <div class="hero-meta-item">
-              <div class="hero-meta-label">Registered</div>
-              <div class="hero-meta-value highlight font-mono">Singapore</div>
-            </div>
-            <div class="hero-meta-item">
-              <div class="hero-meta-label">Capital</div>
-              <div class="hero-meta-value font-mono">SGD 100,000</div>
-            </div>
-          </div>
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <img src="assets/svg/hexmark.svg" alt="" class="hero-watermark"/>
+    <div class="wrap">
+      <span class="eyebrow">Energy Trading · Singapore</span>
+      <h1 class="font-serif">Execution-Driven Commodity Trading.</h1>
+      <p class="lead">Global reach. Singapore registered. Institutional-grade execution from nomination through settlement — across petroleum products, LNG, LPG and crude oil.</p>
+      <div class="hero-ctas">
+        <a href="mailto:energy@aescollective.sg?subject=Quote%20Request" class="btn btn-primary">Request a Quote <span class="arrow">→</span></a>
+        <a href="process.html" class="btn btn-outline">How We Execute</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stat strip -->
+  <section class="stat-strip">
+    <div class="wrap">
+      <div class="stat-grid">
+        <div class="stat-cell"><div class="v">UEN 202135481Z</div><div class="l">ACRA Verified</div></div>
+        <div class="stat-cell"><div class="v">SSIC 46610</div><div class="l">Wholesale of Fuels</div></div>
+        <div class="stat-cell"><div class="v">2% PB</div><div class="l">Performance Bond</div></div>
+        <div class="stat-cell"><div class="v">12–36 mo</div><div class="l">SPA Terms</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we trade -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">What We Trade</span>
+        <h2>Four commodities. One discipline.</h2>
+        <p>Each product line is sourced, financed, and delivered under the same institutional execution framework — with certification and chain-of-custody at every step.</p>
+      </div>
+      <div class="card-grid">
+        <a href="products.html#diesel" class="card reveal">
+          <svg class="icon" viewBox="0 0 32 32" fill="none"><path d="M16 3 L28 10 V22 L16 29 L4 22 V10 Z" stroke="#D2AC47" stroke-width="2"/><text x="16" y="19" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="9" fill="#2D2E30" font-weight="700">D</text></svg>
+          <h3>Diesel EN590</h3>
+          <p>Ultra-low sulphur 10 ppm. Platts-indexed. Aframax / LR / MR tanker delivery.</p>
+          <div class="meta">SGS · BV Certified</div>
+        </a>
+        <a href="products.html#lng" class="card reveal">
+          <svg class="icon" viewBox="0 0 32 32" fill="none"><path d="M16 3 L28 10 V22 L16 29 L4 22 V10 Z" stroke="#D2AC47" stroke-width="2"/><text x="16" y="19" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="9" fill="#2D2E30" font-weight="700">L</text></svg>
+          <h3>LNG</h3>
+          <p>Liquefied natural gas with full chain-of-custody via dedicated Q88 vessels.</p>
+          <div class="meta">Long-term contract</div>
+        </a>
+        <a href="products.html#lpg" class="card reveal">
+          <svg class="icon" viewBox="0 0 32 32" fill="none"><path d="M16 3 L28 10 V22 L16 29 L4 22 V10 Z" stroke="#D2AC47" stroke-width="2"/><text x="16" y="19" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="9" fill="#2D2E30" font-weight="700">P</text></svg>
+          <h3>LPG</h3>
+          <p>Pressurised and refrigerated. Storage-optimised scheduling for industrial buyers.</p>
+          <div class="meta">Flexible delivery</div>
+        </a>
+        <a href="products.html#crude" class="card reveal">
+          <svg class="icon" viewBox="0 0 32 32" fill="none"><path d="M16 3 L28 10 V22 L16 29 L4 22 V10 Z" stroke="#D2AC47" stroke-width="2"/><text x="16" y="19" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="9" fill="#2D2E30" font-weight="700">C</text></svg>
+          <h3>Crude Oil</h3>
+          <p>Spot and contract supply from non-sanctioned origins, audited at lift.</p>
+          <div class="meta">Spot · Contract</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How we execute -->
+  <section class="section bg-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">How We Execute</span>
+        <h2>From ICPO to settlement, in six structured steps.</h2>
+        <p>A transparent contractual framework — auditable at every transition, with documented handoffs between counterparties.</p>
+      </div>
+      <div class="process-strip reveal">
+        <div class="step-mini"><div class="num">1</div><h4>ICPO</h4><p>Buyer letter of intent</p></div>
+        <div class="step-mini"><div class="num">2</div><h4>SPA</h4><p>Sale &amp; purchase</p></div>
+        <div class="step-mini"><div class="num">3</div><h4>PPOP</h4><p>Proof of product</p></div>
+        <div class="step-mini"><div class="num">4</div><h4>Shipment</h4><p>Q88 nomination</p></div>
+        <div class="step-mini"><div class="num">5</div><h4>Inspection</h4><p>SGS / BV / Intertek</p></div>
+        <div class="step-mini"><div class="num">6</div><h4>Settlement</h4><p>DLC / SBLC release</p></div>
+      </div>
+      <div style="text-align:center;margin-top:3rem;">
+        <a href="process.html" class="btn btn-outline">Read the full framework <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where we operate -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Where We Operate</span>
+        <h2>Singapore-anchored. Globally deployed.</h2>
+        <p>Our trading desk routes physical and financial flows across three regional markets — each governed by the same execution standard.</p>
+      </div>
+      <div class="region-grid">
+        <div class="region-card reveal">
+          <h3>Asia-Pacific</h3>
+          <p>Primary market. India and Southeast Asia anchor a corridor served from our Singapore operational and financial hub.</p>
         </div>
-        <div class="hero-visual">
-          <div class="hero-logo-wrap">
-            <svg width="100%" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
-              <!-- Hexagon outer -->
-              <polygon points="150,5 280,37.5 280,112.5 150,145 20,112.5 20,37.5" fill="none" stroke="white" stroke-opacity="0.15" stroke-width="2"/>
-              <!-- Dashed inner hexagon -->
-              <polygon points="150,30 240,57.5 240,102.5 150,130 60,102.5 60,57.5" fill="none" stroke="#E97132" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
-              <!-- Center diamond -->
-              <polygon points="150,65 165,80 150,95 135,80" fill="#E8E8E8" opacity="0.3"/>
-              <!-- AES text -->
-              <text x="150" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="white">AES</text>
-              <!-- Yellow underline -->
-              <rect x="100" y="44" width="100" height="3" rx="1.5" fill="#E97132"/>
-              <!-- COLLECTIVE -->
-              <text x="150" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#E97132" letter-spacing="4">COLLECTIVE</text>
-              <!-- SINGAPORE -->
-              <text x="150" y="76" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="500" fill="rgba(255,255,255,0.4)" letter-spacing="3">SINGAPORE</text>
-            </svg>
-            <div class="hero-logo-label">AES Collective Pte. Ltd.</div>
-          </div>
+        <div class="region-card reveal">
+          <h3>Europe</h3>
+          <p>Refined fuel and LNG to industrial buyers under documented credit-letter frameworks.</p>
+        </div>
+        <div class="region-card reveal">
+          <h3>Africa</h3>
+          <p>Emerging priority — infrastructure-driven demand and government procurement programs.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-content">
-          <div class="section-label">Company Profile</div>
-          <h2 class="section-title">Built on Integrity.<br>Trading Across Borders.</h2>
-          <p>AES Collective Pte. Ltd. is a Singapore-registered international commodity trading company operating under ACRA-verified status. We specialize in Energy, Metals, and Agricultural commodities, connecting suppliers and buyers across Asia-Pacific, Europe, and Africa.</p>
-          <p>Our company is structured as an Exempt Private Company Limited by Shares, with SGD 100,000 in fully paid-up capital. Sole shareholder and Director is Lim Chin Poh, a Singapore Citizen with full signatory authority over all commercial and contractual matters.</p>
-          <p>We operate strictly within international petroleum trading norms, sourcing only from non-sanctioned origins with third-party verification at every delivery point through SGS, Bureau Veritas (BV), and Intertek.</p>
-        </div>
-        <div class="about-highlight">
-          <h3>Registration Details</h3>
-          <div class="stat-grid">
-            <div class="stat">
-              <div class="stat-label">Company</div>
-              <div class="stat-value">AES Collective Pte. Ltd.</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">UEN</div>
-              <div class="stat-value">202135481Z</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">Incorp. Date</div>
-              <div class="stat-value">12 Oct 2021</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">Status</div>
-              <div class="stat-value">LIVE</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">ACRA Verified</div>
-              <div class="stat-value">30 Mar 2026</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">SSIC Code</div>
-              <div class="stat-value">46610</div>
-            </div>
-          </div>
-        </div>
+  <!-- Why -->
+  <section class="section bg-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why Institutional Buyers Choose Us</span>
+        <h2>Process, not promises.</h2>
       </div>
-      <!-- Registration info table -->
-      <div class="about-reg-info">
-        <h4>Corporate Registry</h4>
-        <table>
-          <tr><td>Registered Name</td><td>AES Collective Pte. Ltd.</td></tr>
-          <tr><td>Entity Type</td><td>Exempt Private Company Limited by Shares</td></tr>
-          <tr><td>UEN</td><td>202135481Z</td></tr>
-          <tr><td>Jurisdiction</td><td>Singapore</td></tr>
-          <tr><td>Financial Year End</td><td>31 December</td></tr>
-          <tr><td>Registered Address</td><td>37 Lorong 23 Geylang, #07-04, Yu Li Industrial Building, Singapore 388371</td></tr>
-          <tr><td>Director</td><td>Lim Chin Poh (Lin Zhenbao) — Full signatory authority</td></tr>
-          <tr><td>Company Secretary</td><td>Sam Yuzhe</td></tr>
-          <tr><td>Issued Capital</td><td>SGD 100,000 (100,000 Ordinary Shares, Fully Paid)</td></tr>
-          <tr><td>Shareholder / UBO</td><td>Lim Chin Poh — 100% ownership</td></tr>
-          <tr><td>PEP / Sanctions</td><td>No Known Exposure</td></tr>
-          <tr><td>Email</td><td>energy@aescollective.sg</td></tr>
-          <tr><td>Website</td><td>www.aescollective.sg</td></tr>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMMODITIES -->
-  <section id="commodities">
-    <div class="container">
-      <div class="commodities-header">
-        <div class="section-label">What We Trade</div>
-        <h2 class="section-title">Commodity Focus</h2>
-        <p class="section-subtitle">We operate across three primary commodity verticals, with Energy as our dominant trading category.</p>
-      </div>
-      <div class="commodities-grid">
-        <!-- Energy Card -->
-        <div class="commodity-card energy">
-          <div class="commodity-icon">
-            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <h3>Energy</h3>
-          <p>Our primary commodity vertical covering refined petroleum products and natural gas. All products sourced from non-sanctioned origins with SGS/BV/Intertek certification at every delivery point.</p>
-          <div class="commodity-tags">
-            <span class="commodity-tag">Diesel EN590 10 PPM</span>
-            <span class="commodity-tag">LNG</span>
-            <span class="commodity-tag">LPG</span>
-            <span class="commodity-tag">Crude Oil</span>
-            <span class="commodity-tag">Spot &amp; Contract</span>
-          </div>
+      <div class="why-grid">
+        <div class="why-cell reveal">
+          <span class="num-tag">01</span>
+          <h3>Transparent settlement</h3>
+          <p>A six-step framework with documented handoffs and counter-signed protocols at every stage.</p>
         </div>
-        <!-- Metals Card -->
-        <div class="commodity-card metals">
-          <div class="commodity-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 4v8l4 4"/></svg>
-          </div>
-          <h3>Metals</h3>
-          <p>International metals trading covering ferrous and non-ferrous commodities. We connect producers in Asia-Pacific and Africa with buyers in Europe and Southeast Asia.</p>
-          <div class="commodity-tags">
-            <span class="commodity-tag">Ferrous</span>
-            <span class="commodity-tag">Non-Ferrous</span>
-            <span class="commodity-tag">Steel</span>
-            <span class="commodity-tag">Aluminum</span>
-          </div>
+        <div class="why-cell reveal">
+          <span class="num-tag">02</span>
+          <h3>Certified inspections</h3>
+          <p>SGS, Bureau Veritas or Intertek at every delivery point — quantity and quality verified before settlement.</p>
         </div>
-        <!-- Agriculture Card -->
-        <div class="commodity-card agriculture">
-          <div class="commodity-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 22V12M12 12C12 7 7 2 2 2M12 12C12 7 17 2 22 2M12 2v10M2 12h20M6 7l6 5 6-5"/></svg>
-          </div>
-          <h3>Agriculture</h3>
-          <p>Bulk agricultural commodities trading connecting global producers with buyers across the Asia-Pacific region and beyond. Focus on staple commodities with established logistics chains.</p>
-          <div class="commodity-tags">
-            <span class="commodity-tag">Grains</span>
-            <span class="commodity-tag">Oilseeds</span>
-            <span class="commodity-tag">Soft Commodities</span>
-          </div>
+        <div class="why-cell reveal">
+          <span class="num-tag">03</span>
+          <h3>Singapore-anchored compliance</h3>
+          <p>ACRA-registered. Full KYC/AML and sanctions screening. No PEP exposure in beneficial ownership.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TRADE PROCESS -->
-  <section class="process" id="process">
-    <div class="container">
-      <div class="process-header">
-        <div class="section-label">How We Operate</div>
-        <h2 class="section-title">Trade Process</h2>
-        <p class="section-subtitle">Our standardized contractual framework ensures transparency and protection for all counterparties.</p>
-      </div>
-      <div class="process-flow">
-        <div class="process-step">
-          <div class="process-step-num">1</div>
-          <div class="process-step-title">ICPO</div>
-          <div class="process-step-desc">Irrevocable Corporate Purchase Order — Buyer commits intent</div>
-        </div>
-        <div class="process-arrow">→</div>
-        <div class="process-step">
-          <div class="process-step-num">2</div>
-          <div class="process-step-title">SPA</div>
-          <div class="process-step-desc">Sales & Purchase Agreement — Terms, price, volume locked</div>
-        </div>
-        <div class="process-arrow">→</div>
-        <div class="process-step">
-          <div class="process-step-num">3</div>
-          <div class="process-step-title">PPOP</div>
-          <div class="process-step-desc">Partial Payment on POD — 2% Performance Bond</div>
-        </div>
-        <div class="process-arrow">→</div>
-        <div class="process-step">
-          <div class="process-step-num">4</div>
-          <div class="process-step-title">Shipment</div>
-          <div class="process-step-desc">SGS/BV/Intertek inspection + documentation at load port</div>
-        </div>
-        <div class="process-arrow">→</div>
-        <div class="process-step">
-          <div class="process-step-num">5</div>
-          <div class="process-step-title">Settlement</div>
-          <div class="process-step-desc">Final payment + title transfer upon verified delivery</div>
-        </div>
-      </div>
-      <div class="process-details">
-        <div class="process-detail-card">
-          <h4>Performance Bond</h4>
-          <p>2% of contract value — protected and refundable upon verified delivery</p>
-        </div>
-        <div class="process-detail-card">
-          <h4>SPA Options</h4>
-          <p>12 to 36 month contract terms available for ongoing supply arrangements</p>
-        </div>
-        <div class="process-detail-card">
-          <h4>Third-Party Inspection</h4>
-          <p>SGS, Bureau Veritas, or Intertek certified at every delivery point</p>
-        </div>
+  <!-- CTA band -->
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--gold);">Ready to Execute</span>
+      <h2 class="font-serif">Send an ICPO. Receive a structured response.</h2>
+      <p>Submit your letter of intent and trade parameters. We respond with proof of product, SPA terms and a delivery schedule.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="mailto:energy@aescollective.sg?subject=ICPO%20%E2%80%94%20Inquiry" class="btn btn-primary">Send an ICPO <span class="arrow">→</span></a>
+        <a href="contact.html" class="btn btn-ghost">View contact details</a>
       </div>
     </div>
   </section>
+</main>
 
-  <!-- CREDENTIALS -->
-  <section id="credentials">
-    <div class="container">
-      <div class="credentials-header">
-        <div class="section-label">Compliance & Trust</div>
-        <h2 class="section-title">Credentials</h2>
-        <p class="section-subtitle">We maintain the highest standards of due diligence, KYC compliance, and third-party verification.</p>
+<!-- @partial:footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <img src="assets/img/logo.png" alt="AES Collective"/>
+          <div>
+            <div style="font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.1rem;color:#FFFFFE;">AES Collective</div>
+            <div style="font-size:0.65rem;letter-spacing:0.28em;color:#D2AC47;text-transform:uppercase;">Energy Division</div>
+          </div>
+        </div>
+        <p style="max-width:34ch;">Execution-driven trade in petroleum products, LNG, LPG and crude oil. Singapore registered, institutionally governed.</p>
       </div>
-      <div class="credentials-grid">
-        <div class="credential-card">
-          <div class="credential-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <h4>KYC/AML Compliant</h4>
-          <p>Full KYC package available on request. 100% beneficial ownership disclosed and verified.</p>
-        </div>
-        <div class="credential-card">
-          <div class="credential-icon">
-            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
-          </div>
-          <h4>PEP-Free</h4>
-          <p>No known Politically Exposed Person status. No sanctions exposure across all watchlists.</p>
-        </div>
-        <div class="credential-card">
-          <div class="credential-icon">
-            <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v11m0 0H5m4 0h10m0-11v11M3 16h18M3 11h18"/></svg>
-          </div>
-          <h4>ACRA Verified</h4>
-          <p>Singapore ACRA BizFile verified as of 30 March 2026. All statutory filings current.</p>
-        </div>
-        <div class="credential-card">
-          <div class="credential-icon">
-            <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/></svg>
-          </div>
-          <h4>SGS/BV/Intertek</h4>
-          <p>Third-party inspection at every delivery point. International petroleum trading norms.</p>
-        </div>
+      <div>
+        <h5>Navigate</h5>
+        <a href="products.html">Products</a>
+        <a href="process.html">Process</a>
+        <a href="reach.html">Global Reach</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h5>Office</h5>
+        <p style="margin:0;">AES Collective Pte. Ltd.<br/>37 Lorong 23 Geylang<br/>#07-04 Yu Li Industrial Building<br/>Singapore 388371</p>
+      </div>
+      <div>
+        <h5>Reach Us</h5>
+        <a href="mailto:energy@aescollective.sg">energy@aescollective.sg</a>
+        <a href="https://www.aescollective.sg" target="_blank" rel="noopener">www.aescollective.sg</a>
+        <p style="margin-top:1rem;font-size:0.8rem;color:#6B6E72;">UEN 202135481Z<br/>SSIC 46610</p>
       </div>
     </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="section-label">Get in Touch</div>
-          <h2 class="section-title">Contact Us</h2>
-          <p>We welcome enquiries from serious counterparties — buyers, sellers, financial institutions, and logistics partners.</p>
-          <div class="contact-items">
-            <div class="contact-item">
-              <div class="contact-item-icon">
-                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div>
-                <div class="contact-item-label">Email</div>
-                <div class="contact-item-value"><a href="mailto:energy@aescollective.sg">energy@aescollective.sg</a></div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div>
-                <div class="contact-item-label">Registered Office</div>
-                <div class="contact-item-value">37 Lorong 23 Geylang, #07-04<br>Yu Li Industrial Building<br>Singapore 388371</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">
-                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              </div>
-              <div>
-                <div class="contact-item-label">Director</div>
-                <div class="contact-item-value">Lim Chin Poh</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              </div>
-              <div>
-                <div class="contact-item-label">Website</div>
-                <div class="contact-item-value"><a href="https://www.aescollective.sg" target="_blank">www.aescollective.sg</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="contact-form-wrap">
-          <h3>Send an Enquiry</h3>
-          <p>All communications are treated with strict confidentiality.</p>
-          <form id="contactForm" action="#" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
-              </div>
-              <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" placeholder="Your company">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="you@company.com" required>
-            </div>
-            <div class="form-group">
-              <label for="commodity">Commodity Interest</label>
-              <select id="commodity" name="commodity">
-                <option value="">Select a commodity</option>
-                <option value="diesel">Diesel EN590 10 PPM</option>
-                <option value="lng">LNG (Liquefied Natural Gas)</option>
-                <option value="lpg">LPG (Liquefied Petroleum Gas)</option>
-                <option value="crude">Crude Oil</option>
-                <option value="metals">Metals</option>
-                <option value="agriculture">Agriculture</option>
-                <option value="other">Other / General</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Describe your enquiry — volume, origin/destination, timeline..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Enquiry →</button>
-            <p class="form-disclaimer">🔒 All enquiries are treated as strictly private and confidential in accordance with our corporate privacy policy. No information will be shared with third parties without explicit consent.</p>
-          </form>
-        </div>
-      </div>
+    <div class="foot-bottom">
+      <div>© <span data-year>2026</span> AES Collective Pte. Ltd. All rights reserved.</div>
+      <div>Wholesale of Fuels and Related Products · SSIC 46610</div>
     </div>
-  </section>
+  </div>
+</footer>
+<!-- @endpartial -->
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <span class="footer-logo">AES Collective Pte. Ltd.</span>
-          <span class="footer-tagline">Strictly Private &amp; Confidential</span>
-        </div>
-        <div class="footer-status">System Active — Singapore</div>
-        <div class="footer-copy">&copy; 2026 AES Collective Pte. Ltd. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#commodities">Commodities</a>
-          <a href="#process">Process</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Mobile Nav Script -->
-  <script>
-    // Simple mobile toggle
-    document.getElementById('mobileToggle').addEventListener('click', function() {
-      var links = document.getElementById('navLinks');
-      if (links.style.display === 'flex') {
-        links.style.display = 'none';
-      } else {
-        links.style.display = 'flex';
-        links.style.flexDirection = 'column';
-        links.style.position = 'absolute';
-        links.style.top = '72px';
-        links.style.left = '0';
-        links.style.right = '0';
-        links.style.background = '#0E2841';
-        links.style.padding = '16px';
-        links.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
-      }
-    });
-
-    // Close mobile nav on link click
-    document.querySelectorAll('#navLinks a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        document.getElementById('navLinks').style.display = 'none';
-      });
-    });
-
-    // Form handler
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      var btn = this.querySelector('button[type=submit]');
-      btn.textContent = '✓ Message Sent';
-      btn.style.background = '#196B24';
-      setTimeout(function() {
-        btn.textContent = 'Send Enquiry →';
-        btn.style.background = '';
-      }, 3000);
-    });
-  </script>
+<script src="assets/js/site.js"></script>
 </body>
 </html>
